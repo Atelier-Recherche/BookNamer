@@ -1,0 +1,23 @@
+{
+  "name": "obsidian-bib-renamer",
+  "version": "1.0.0",
+  "description": "Smart book and article renaming, metadata enrichment, and reading note generation for Obsidian (Desktop, Android & iOS).",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc -noEmit && node esbuild.config.mjs production"
+  },
+  "keywords": ["obsidian", "plugin", "rename", "epub", "pdf", "bibliography", "metadata"],
+  "author": "BookNamer",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "0.25.12",
+    "obsidian": "latest",
+    "tslib": "2.8.1",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1"
+  }
+}

@@ -1,0 +1,39 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node
+node_modules/
+dist/
+build/
+.svelte-kit/
+package/
+*.tsbuildinfo
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Rust / Tauri
+**/target/
+**/gen/schemas/
+
+# Obsidian plugin build artifacts stay tracked (main.js) for convenience,
+# but never commit node_modules
+obsidian-bib-renamer/node_modules/
+
+# Local patch scripts / probes
+**/_patch_*.py
+**/tests/api_probe.rs
+
+# Logs
+*.log
+npm-debug.log*

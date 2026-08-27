@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Build (main.js is the distributed bundle — keep in repo for Obsidian)
+# Uncomment to ignore if you prefer CI-only builds:
+# main.js
+
+# TypeScript
+*.tsbuildinfo
+
+# Env
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
