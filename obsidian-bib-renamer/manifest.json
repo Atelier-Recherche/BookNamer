@@ -1,10 +1,10 @@
 {
-  "id": "obsidian-bib-renamer",
-  "name": "Bib Renamer & Metadata",
+  "id": "booknamer",
+  "name": "BookNamer",
   "version": "1.0.0",
   "minAppVersion": "1.5.0",
   "description": "Smart renaming, metadata enrichment (OpenLibrary, Crossref, Google Books) and reading note generation for EPUB and PDF files in your vault.",
   "author": "BookNamer",
-  "authorUrl": "https://github.com/booknamer",
+  "authorUrl": "https://atelier.atechnologie.fr/",
   "isDesktopOnly": false
 }

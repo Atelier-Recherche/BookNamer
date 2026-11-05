@@ -77,13 +77,13 @@ export default class BibRenamerPlugin extends Plugin {
         try {
           metadata = await extractEpubMetadata(arrayBuffer);
         } catch (e) {
-          console.warn('[obsidian-bib-renamer] EPUB internal parser warning:', e);
+          console.warn('[booknamer] EPUB internal parser warning:', e);
         }
       } else if (ext === 'pdf') {
         try {
           metadata = extractPdfMetadata(arrayBuffer);
         } catch (e) {
-          console.warn('[obsidian-bib-renamer] PDF internal parser warning:', e);
+          console.warn('[booknamer] PDF internal parser warning:', e);
         }
       }
 
@@ -137,7 +137,7 @@ export default class BibRenamerPlugin extends Plugin {
       ).open();
     } catch (err: any) {
       notice.hide();
-      console.error('[obsidian-bib-renamer] Error processing file:', err);
+      console.error('[booknamer] Error processing file:', err);
       new Notice(`Erreur de traitement : ${err.message || err}`);
     }
   }

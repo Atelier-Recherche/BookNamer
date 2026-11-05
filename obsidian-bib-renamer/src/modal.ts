@@ -251,7 +251,7 @@ export class BibRenamerModal extends Modal {
       this.close();
       this.onComplete(this.file, noteFile);
     } catch (err: any) {
-      console.error('[obsidian-bib-renamer] Error renaming file:', err);
+      console.error('[booknamer] Error renaming file:', err);
       new Notice(`Erreur lors du renommage : ${err.message || err}`);
     }
   }
@@ -308,7 +308,7 @@ export class BibRenamerModal extends Modal {
       new Notice(`Note de lecture créée : ${noteName}`);
       return created;
     } catch (err: any) {
-      console.error('[obsidian-bib-renamer] Error creating reading note:', err);
+      console.error('[booknamer] Error creating reading note:', err);
       new Notice(`Erreur création de note : ${err.message || err}`);
       return undefined;
     }

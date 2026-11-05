@@ -124,7 +124,7 @@ export async function searchByQuery(
         const amz = await fetchAmazonByIsbn(id);
         all.push(amz);
       } catch (e) {
-        console.log('[obsidian-bib-renamer] Amazon follow-up failed:', id, e);
+        console.log('[booknamer] Amazon follow-up failed:', id, e);
       }
     }
   }
@@ -150,7 +150,7 @@ export async function enrichMetadata(
       const cr = await fetchCrossrefByDoi(metadata.doi);
       return [cr];
     } catch (e) {
-      console.log('[obsidian-bib-renamer] Crossref DOI lookup failed:', e);
+      console.log('[booknamer] Crossref DOI lookup failed:', e);
     }
   }
 

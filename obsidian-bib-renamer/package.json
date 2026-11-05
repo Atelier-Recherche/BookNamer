@@ -1,5 +1,5 @@
 {
-  "name": "obsidian-bib-renamer",
+  "name": "booknamer",
   "version": "1.0.0",
   "description": "Smart book and article renaming, metadata enrichment, and reading note generation for Obsidian (Desktop, Android & iOS).",
   "main": "main.js",

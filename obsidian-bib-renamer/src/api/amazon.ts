@@ -85,7 +85,7 @@ export async function fetchAmazonByIsbn(isbn: string): Promise<BookMetadata> {
         };
       }
     } catch (e) {
-      console.log('[obsidian-bib-renamer] Amazon lookup error for url:', url, e);
+      console.log('[booknamer] Amazon lookup error for url:', url, e);
     }
   }
 

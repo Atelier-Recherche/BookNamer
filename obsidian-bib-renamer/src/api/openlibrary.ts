@@ -32,7 +32,7 @@ export async function fetchOpenLibraryByIsbn(isbn: string): Promise<BookMetadata
       }
     }
   } catch (e) {
-    console.log('[obsidian-bib-renamer] OpenLibrary search.json failed, trying api/books...', e);
+    console.log('[booknamer] OpenLibrary search.json failed, trying api/books...', e);
   }
 
   // 2. Fallback sur api/books?bibkeys=ISBN:...
@@ -151,7 +151,7 @@ export async function searchOpenLibrary(title: string, author: string): Promise<
       const results = await searchOpenLibraryOnce(candidate);
       if (results.length > 0) return results;
     } catch (e) {
-      console.log('[obsidian-bib-renamer] OpenLibrary search failed for:', candidate, e);
+      console.log('[booknamer] OpenLibrary search failed for:', candidate, e);
     }
   }
 

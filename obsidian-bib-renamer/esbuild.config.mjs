@@ -16,7 +16,7 @@ const prod = (process.argv[2] === "production");
 /** Dossier vault Obsidian cible pour déployer le plugin après build. */
 const VAULT_PLUGIN_DIR =
   process.env.OBSIDIAN_PLUGIN_DIR ||
-  "D:\\Notes\\.obsidian\\plugins\\obsidian-bib-renamer";
+  "D:\\Notes\\.obsidian\\plugins\\booknamer";
 
 function copyToVault() {
   const files = ["main.js", "manifest.json"];

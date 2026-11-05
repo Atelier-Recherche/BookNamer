@@ -76,7 +76,7 @@ export async function fetchBnfByIsbn(isbn: string): Promise<BookMetadata> {
         };
       }
     } catch (e) {
-      console.log('[obsidian-bib-renamer] BNF lookup error for query:', q, e);
+      console.log('[booknamer] BNF lookup error for query:', q, e);
     }
   }
 
@@ -114,7 +114,7 @@ export async function searchBnf(query: string): Promise<BookMetadata[]> {
 
     return results;
   } catch (e) {
-    console.log('[obsidian-bib-renamer] BNF text search failed:', e);
+    console.log('[booknamer] BNF text search failed:', e);
     return [];
   }
 }
