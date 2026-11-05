@@ -34,6 +34,10 @@ obsidian-bib-renamer/node_modules/
 **/_patch_*.py
 **/tests/api_probe.rs
 
+# Local release tooling (not versioned)
+_release-local.ps1
+_release-dist/
+
 # Logs
 *.log
 npm-debug.log*
